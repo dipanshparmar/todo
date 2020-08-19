@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- internal CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Poppins link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+    <title>TODO APP</title>
+</head>
+<body>
+    <!-- banner -->
+    <div id="banner">
+        <span class="main-text"><h2>Notice</h2><br>This Web App doesn't store any of your TODO tasks in any type of storage. This Web App is created by the developer only to apply what he has learnt on the Web Development Roadmap.<br><br>Thank You.</span>
+        <button type="button" id="to-close-banner">I Understand</button>
+    </div>
+
+    <!-- header area for heading part -->
+    <header>
+        <h1>DIPANSH'S TODO</h1>
+    </header>
+
+    <!-- for alert bar of empty input -->
+    <div id="alert">
+        <span class="alert">TODO item can not be empty</span>
+        <i class="fas fa-times" id="close-alert"></i>
+    </div>
+    
+
+    <!-- simple form to take todo item input -->
+    <form>
+        <input type="text" name="todo-item-input" maxlength="20" id="todo-item-input" autocomplete="off" autofocus="on">
+        <i class="fas fa-plus" id="add-todo-button"></i>
+    </form>
+
+    <!-- main section for all the todo tasks -->
+    <main id="main-todo">
+        <!-- dynamic list items will go here -->
+        <ul id="todo-list-collection">
+        </ul>
+    </main>
+
+    <!-- internal JS -->
+    <script src="app.js"></script>
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/2b8d837e91.js" crossorigin="anonymous"></script>
+</body>
+</html>
